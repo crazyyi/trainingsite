@@ -25,13 +25,20 @@
       </form>
     </div>
     <div id="topnav">
+    	{% set navigation_bar = [
+    		('/', 'index', '首页'),
+    		('style-demo', 'style-demo', '关于我们'),
+    		('full-width', 'full-width', '课程介绍'),
+    		('3-columns', '3-columns', '活动介绍'),
+    		('portfolio', 'portfolio', '企业培训'),
+    		('gallery', 'gallery', '师资介绍')
+   			] -%}
+   		{% set active_page = active_page|default('index') -%}
       <ul>
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="style-demo">Style Demo</a></li>
-        <li><a href="full-width">Full Width</a></li>
-        <li><a href="3-columns">3 Columns</a></li>
-        <li><a href="portfolio">Portfolio</a></li>
-        <li><a href="gallery">Gallery</a></li>
+      	{% for href, id, caption in navigation_bar %}
+        <li {% if id == active_page %} class="active"{% endif %}>
+        	<a href="{{ href|e }}">{{ caption|e }}</a></li>
+        {% endfor %}
         <li><a href="#">This a very long link</a></li>
         <li class="last"><a href="#">This is the last</a></li>
       </ul>
