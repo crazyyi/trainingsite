@@ -35,9 +35,9 @@ def full_width():
 def gallery():
 	return {'title':'RedSunflowers'}
 
-@route('/portfolio')
-@jinja2_view('portfolio.html')
-def portfolio():
+@route('/corporation')
+@jinja2_view('corporation.html')
+def corporation():
 	return {'title':'RedSunflowers'}
 
 @route('/aboutus')
