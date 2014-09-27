@@ -20,14 +20,14 @@ def server_static(filepath):
 def index():
 	return {'title':'RedSunflowers'}
 
-@route('/3-columns')
-@jinja2_view('3-columns.html')
-def three_columns():
+@route('/courses_intro')
+@jinja2_view('courses_intro.html')
+def courses_intro():
 	return {'title':'RedSunflowers'}
 
-@route('/full-width')
-@jinja2_view('full-width.html')
-def full_width():
+@route('/activities')
+@jinja2_view('activities.html')
+def activities():
 	return {'title':'RedSunflowers'}
 
 @route('/gallery')
