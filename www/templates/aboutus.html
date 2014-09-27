@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% set active_page = "style-demo" %}
+{% set active_page = "aboutus" %}
 {% block title %}
 <title>{{ title }} | 关于我们</title>
 {% endblock %}
@@ -13,12 +13,12 @@
   <div id="container" class="clear">
     <!-- ####################################################################################################### -->
     <div id="content">
-      <h1>&lt;h1&gt; to &lt;h6&gt; - Headline Colour and Size Are All The Same</h1>
+      <h1>公司简介</h1>
       <img class="imgr" src="images/demo/imgr.gif" alt="" width="125" height="125" />
-      <p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis elit sagittis felisi eger id justo maurisus convallicitur.</p>
-      <p>Dapiensociis <a href="#">temper donec auctortortis cumsan</a> et curabitur condis lorem loborttis leo. Ipsumcommodo libero nunc at in velis tincidunt pellentum tincidunt vel lorem.</p>
+      <p>The RedSunflower English 2012年在深圳成立，前身是Sunflower English Club, 自成立以来，已有200多位会员，三个俱乐部场地。其成立原因是基于帮助他人如何快速掌握第二语言及培养演讲能力。 TSEC相信可应用性语言的重要性，致力于提供一个平台传播国际语言和文化。</p>
+      <p>TSEC通过多种现代教育形式，使不同水平的外语学员掌握更有效的外语沟通能力和方法，会员可根据自己的情况选择不同级别的沙龙参加小组讨论。其中商务会议模拟，外企生存之我见等TOPIC已成为最受会员追捧的话题。</p>
       <img class="imgl" src="images/demo/imgl.gif" alt="" width="125" height="125" />
-      <p>This is a W3C compliant free website template from <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>. This template is distributed using a <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>.</p>
+      <p>我们提供从基础英语到商务英语，以及企业培训等服务。课程详情请参考<a href="/3-columns">课程介绍</a></p>
       <p>You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files. For more CSS templates visit <a href="http://www.os-templates.com/">Free Website Templates</a>.</p>
       <p>Portortornec condimenterdum eget consectetuer condis consequam pretium pellus sed mauris enim. Puruselit mauris nulla hendimentesque elit semper nam a sapien urna sempus.</p>
       <h2>Table(s)</h2>
@@ -58,6 +58,7 @@
           </tr>
         </tbody>
       </table>
+      <!--
       <div id="comments">
         <h2>Comments</h2>
         <ul class="commentlist">
@@ -78,29 +79,9 @@
           </li>
         </ul>
       </div>
-      <h2>Write A Comment</h2>
-      <div id="respond">
-        <form action="#" method="post">
-          <p>
-            <input type="text" name="name" id="name" value="" size="22" />
-            <label for="name"><small>Name (required)</small></label>
-          </p>
-          <p>
-            <input type="text" name="email" id="email" value="" size="22" />
-            <label for="email"><small>Mail (required)</small></label>
-          </p>
-          <p>
-            <textarea name="comment" id="comment" cols="100%" rows="10"></textarea>
-            <label for="comment" style="display:none;"><small>Comment (required)</small></label>
-          </p>
-          <p>
-            <input name="submit" type="submit" id="submit" value="Submit Form" />
-            &nbsp;
-            <input name="reset" type="reset" id="reset" tabindex="5" value="Reset Form" />
-          </p>
-        </form>
-      </div>
+    -->
     </div>
+    <!--
     <div id="column">
       <div class="subnav">
         <h2>Secondary Navigation</h2>
@@ -153,60 +134,7 @@
         <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
       </div>
     </div>
-    <!-- ####################################################################################################### -->
-  </div>
-</div>
-{% endblock %}
-
-{% block row4 %}
-<div class="wrapper row4">
-  <div id="footer" class="clear">
-    <!-- ####################################################################################################### -->
-    <div class="footbox">
-      <h2>Quick Links</h2>
-      <ul>
-        <li><a href="#">&raquo; Homepage</a></li>
-        <li><a href="#">&raquo; Contact Us</a></li>
-        <li><a href="#">&raquo; Sitemap</a></li>
-        <li><a href="#">&raquo; Privacy Policy</a></li>
-        <li><a href="#">&raquo; Terms of Use</a></li>
-        <li><a href="#">&raquo; Copyright Information</a></li>
-        <li><a href="#">&raquo; Website Matters</a></li>
-      </ul>
-    </div>
-    <div class="footbox">
-      <h2>How To Find Us</h2>
-      <address>
-      Address Line 1<br />
-      Address Line 2<br />
-      Town/City<br />
-      Postcode/Zip<br />
-      <br />
-      Tel: xxxx xxxx xxxxxx<br />
-      Email: <a href="#">contact@domain.com</a>
-      </address>
-    </div>
-    <div class="fl_right">
-      <div id="social">
-        <h2>Connect With Us</h2>
-        <ul>
-          <li><a href="#"><img src="images/social/facebook.gif" alt="" /></a></li>
-          <li><a href="#"><img src="images/social/twitter.gif" alt="" /></a></li>
-          <li><a href="#"><img src="images/social/flickr.gif" alt="" /></a></li>
-          <li><a href="#"><img src="images/social/youtube.gif" alt="" /></a></li>
-          <li class="last"><a href="#"><img src="images/social/rss.gif" alt="" /></a></li>
-        </ul>
-      </div>
-      <div id="newsletter" class="clear">
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Subscribe To Our Newsletter:</legend>
-            <input type="text" value="Enter Email Here&hellip;" onfocus="this.value=(this.value=='Enter Email Here&hellip;')? '' : this.value ;" />
-            <input type="text" id="subscribe" value="Submit" />
-          </fieldset>
-        </form>
-      </div>
-    </div>
+  -->
     <!-- ####################################################################################################### -->
   </div>
 </div>

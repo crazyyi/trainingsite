@@ -27,11 +27,14 @@
     <div id="topnav">
     	{% set navigation_bar = [
     		('/', 'index', '首页'),
-    		('style-demo', 'style-demo', '关于我们'),
-    		('full-width', 'full-width', '课程介绍'),
-    		('3-columns', '3-columns', '活动介绍'),
+    		('aboutus', 'aboutus', '关于我们'),
+    		('full-width', 'full-width', '活动介绍'),
+    		('3-columns', '3-columns', '课程介绍'),
     		('portfolio', 'portfolio', '企业培训'),
-    		('gallery', 'gallery', '师资介绍')
+    		('gallery', 'gallery', '师资介绍'),
+    		('resources', 'resources', '学习资源'),
+    		('faq', 'faq', 'FAQ'),
+    		('contactus', 'contactus', '联系我们')
    			] -%}
    		{% set active_page = active_page|default('index') -%}
       <ul>
@@ -39,8 +42,6 @@
         <li {% if id == active_page %} class="active"{% endif %}>
         	<a href="{{ href|e }}">{{ caption|e }}</a></li>
         {% endfor %}
-        <li><a href="#">This a very long link</a></li>
-        <li class="last"><a href="#">This is the last</a></li>
       </ul>
     </div>
   </div>
@@ -48,7 +49,58 @@
 
 {% block row2 %} {% endblock %}
 {% block row3 %} {% endblock %}
-{% block row4 %} {% endblock %}
+<div class="wrapper row4">
+  <div id="footer" class="clear">
+    <!-- ####################################################################################################### -->
+    <!--
+    <div class="footbox">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#">&raquo; Homepage</a></li>
+        <li><a href="#">&raquo; Contact Us</a></li>
+        <li><a href="#">&raquo; Sitemap</a></li>
+        <li><a href="#">&raquo; Privacy Policy</a></li>
+        <li><a href="#">&raquo; Terms of Use</a></li>
+        <li><a href="#">&raquo; Copyright Information</a></li>
+        <li><a href="#">&raquo; Website Matters</a></li>
+      </ul>
+    </div>
+  -->
+    <div class="footbox">
+      <h2>地址</h2>
+      <address>
+      Address Line 1<br />
+      Address Line 2<br />
+      深圳<br />
+      <br />
+      Tel: xxxx xxxx xxxxxx<br />
+      Email: <a href="#">contact@domain.com</a>
+      </address>
+    </div>
+    <div class="fl_right">
+      <div id="social">
+        <h2>Connect With Us</h2>
+        <ul>
+          <li><a href="#"><img src="../images/social/facebook.gif" alt="" /></a></li>
+          <li><a href="#"><img src="../images/social/twitter.gif" alt="" /></a></li>
+          <li><a href="#"><img src="../images/social/flickr.gif" alt="" /></a></li>
+          <li><a href="#"><img src="../images/social/youtube.gif" alt="" /></a></li>
+          <li class="last"><a href="#"><img src="../images/social/rss.gif" alt="" /></a></li>
+        </ul>
+      </div>
+      <div id="newsletter" class="clear">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Subscribe To Our Newsletter:</legend>
+            <input type="text" value="Enter Email Here&hellip;" onfocus="this.value=(this.value=='Enter Email Here&hellip;')? '' : this.value ;" />
+            <input type="text" id="subscribe" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <!-- ####################################################################################################### -->
+  </div>
+</div>
 
 <!-- ####################################################################################################### -->
 <div class="wrapper">

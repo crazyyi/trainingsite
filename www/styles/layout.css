@@ -224,6 +224,18 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 	margin:20px 0 15px 0;
 	}
 
+#column #featured li p.wechatholder{
+	display: :block;
+	width:130px;
+	height:130px;
+	margin:20px 0px 15px 0;
+}
+
+#column #featured li p.wechatholder img{
+	margin:0 60px 0 60px;
+	display: block;
+}
+
 #column #featured li h2{
 	margin:0;
 	padding:0 0 8px 0;

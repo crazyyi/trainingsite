@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% set active_page = "contactus" %}
+{% block title %}
+<title>{{ title }} | 联系我们</title>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+{% endblock %}
+
+{% block row3 %}
+<div class="wrapper row3">
+  <div id="container" class="clear">
+    <div id="content">
+      <h2>请填写你对我们网站的意见和建议</h2>
+      <div id="respond">
+        <form action="#" method="post">
+          <p>
+            <input type="text" name="name" id="name" value="" size="22" />
+            <label for="name"><small>姓名 (required)</small></label>
+          </p>
+          <p>
+            <input type="text" name="email" id="email" value="" size="22" />
+            <label for="email"><small>邮箱地址 (required)</small></label>
+          </p>
+          <p>
+            <label for="comment"><small>建议 (required)</small></label>
+            <textarea name="comment" id="comment" cols="100%" rows="10"></textarea>
+            
+          </p>
+          <p>
+            <input name="submit" type="submit" id="submit" value="提交" />
+            &nbsp;
+            <input name="reset" type="reset" id="reset" tabindex="5" value="重置" />
+          </p>
+        </form>
+      </div>
+    </div>
+    <div id="column">
+      
+      <div id="featured">
+        <ul>
+          <li>
+            <h2>客户服务</h2>
+            <p class="wechatholder"><img src="images/demo/130x130.gif" alt="" /></p>
+            <p>关注微信客服号，获取更多资讯</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ####################################################################################################### -->
+  </div>
+</div>
+{% endblock %}

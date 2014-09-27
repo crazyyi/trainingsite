@@ -40,9 +40,24 @@ def gallery():
 def portfolio():
 	return {'title':'RedSunflowers'}
 
-@route('/style-demo')
-@jinja2_view('style-demo.html')
+@route('/aboutus')
+@jinja2_view('aboutus.html')
 def style_demo():
+	return {'title':'RedSunflowers'}
+
+@route('/contactus')
+@jinja2_view('contactus.html')
+def contactus():
+	return {'title':'RedSunflowers'}
+
+@route('/resources')
+@jinja2_view('resources.html')
+def resources():
+	return {'title':'RedSunflowers'}
+
+@route('/faq')
+@jinja2_view('faq.html')
+def faq():
 	return {'title':'RedSunflowers'}
 
 if __name__ == "__main__":
