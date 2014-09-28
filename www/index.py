@@ -1,5 +1,5 @@
 import bottle
-from bottle import TEMPLATE_PATH, route, run, jinja2_view, jinja2_template as template
+from bottle import TEMPLATE_PATH, redirect, request, route, run, jinja2_view, jinja2_template as template
 
 TEMPLATE_PATH.append('./templates')
 
@@ -59,6 +59,14 @@ def resources():
 @jinja2_view('faq.html')
 def faq():
 	return {'title':'RedSunflowers'}
+
+@route('/submit_comment', method='POST')
+def submit_comment():
+	name = request.forms.get("name").decode("utf-8")
+	email = request.forms.get("email").decode("utf-8")
+	comment = request.forms.get("comment").decode("utf-8")
+
+	redirect("/contactus")
 
 if __name__ == "__main__":
 	run(host='localhost', port=8000, reloader=True)
