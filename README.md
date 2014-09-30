@@ -2,7 +2,6 @@
 
 # To-Do
 
-	* add contact information
 	* add more meaningful images
 	* add teacher introduction
-	* more contents
+	* more course introduction
