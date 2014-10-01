@@ -44,12 +44,50 @@ a{outline:none; text-decoration:none;}
 .imgl{float:left; margin:0 15px 15px 0; clear:left;}
 .imgr{float:right; margin:0 0 15px 15px; clear:right;}
 
+/* ----------------------------------------------Wechatholder--------------------------------*/
+.wechatholder{
+	display: :block;
+	width:130px;
+	height:130px;
+	margin:10px 0px 15px 0px;
+}
+
+/* ----------------------------------------------Sticker-------------------------------------*/
+.clear {
+	 clear:both;
+}
+
+div#row2_container {
+	background-color: #E1D6CB;
+	height: 100%;
+}
+
+div#dynamic {
+	margin-left: 176px;
+	margin-right: 176px;
+	width: auto;
+}
+
+div#sticker {
+	display: block;
+	padding: 12px;
+	margin:20px 10px;
+	background:#fff;
+	width:130px;
+	text-align: center;
+}
+.stick {
+	position:fixed;
+	top:0px;
+}
+
 /* ----------------------------------------------Wrapper-------------------------------------*/
 
 div.wrapper{
 	display:block;
 	width:100%;
 	text-align:left;
+	overflow: hidden;
 	}
 
 div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{
@@ -223,13 +261,6 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 	height:90px;
 	margin:20px 0 15px 0;
 	}
-
-#column #featured li p.wechatholder{
-	display: :block;
-	width:130px;
-	height:130px;
-	margin:20px 0px 15px 0;
-}
 
 #column #featured li p.wechatholder img{
 	margin:0 60px 0 60px;

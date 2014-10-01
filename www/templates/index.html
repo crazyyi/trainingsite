@@ -10,7 +10,8 @@
 {% endblock %}
 
 {% block row2 %}
-<div class="wrapper row2">
+<div id="row2_container">
+<div class="wrapper row2 " id="dynamic">
   <div id="hpage_featured" class="clear">
     <!-- ####################################################################################################### -->
     <div><img src="../images/Homepage_image.jpg" alt="" /></div>
@@ -77,6 +78,14 @@
     -->
     <!-- ####################################################################################################### -->
   </div>
+</div>
+</div>
+{% endblock %}
+{% block float_div %}
+<div class="fl_left" id="sticker">
+  <p class="wechatholder"><img src="../images/wechat.png" alt=""/></p>
+  <p>微信号: linaielts</p>
+  <p>关注微信客服号获取更多优惠信息</p>
 </div>
 {% endblock %}
 
@@ -195,5 +204,19 @@ Holiday和vacation在英语中意思接近，它们包括三种情况：</p>
 <script type="text/javascript" src="../scripts/jquery.timers.1.2.js"></script>
 <script type="text/javascript" src="../scripts/jquery.galleryview.2.1.1.min.js"></script>
 <script type="text/javascript" src="../scripts/jquery.galleryview.setup.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    var s = $("#sticker");
+    var pos = s.position();                    
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        if (windowpos >= pos.top) {
+            s.addClass("stick");
+        } else {
+            s.removeClass("stick"); 
+        }
+    });
+});
+</script>
 <!-- End Homepage Specific Elements -->
 {% endblock %}
