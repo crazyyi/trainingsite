@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% set active_page = "courses_intro" %}
+
+{% block title %}
+<title>{{ title }} | 课程介绍</title>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="../styles/layout.css" type="text/css" />
+<!-- 3 Column Stylesheet Added To The Page And Not To The Layout.css -->
+<link rel="stylesheet" href="../styles/3_column.css" type="text/css" />
+{% endblock %}
+
+
+{% block row3 %}
+<div class="wrapper row3">
+  <div id="container" class="clear">
+    <!-- ####################################################################################################### -->
+    <div id="left_column">
+      <div class="holder">
+        <h2 class="title">快捷方式</h2>
+        <ul class="nostart">
+          <li><a href="#">基础口语班</a></li>
+          <li><a href="#">BEC商务口语班</a></li>
+          <li><a href="#">雅思口语班</a></li>
+          <li><a href="#">面试口语班</a></li>
+          <li><a href="#">写作班</a></li>
+          <li><a href="#">SAT班</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ############ -->
+    <div id="content">
+      <h1 class="title">优质课程一览</h1>
+      <div class="imgholder"><img src="../images/tutoring.jpg" alt="" width=430 height=200 /></div>
+      <p>在睿特，我们为学生提供各种优质课程，保证满足各种层次各种需求的学员的需求。我们采取国际先进教材和我们有多年教育经验的老师编写的教材，注重语言实践，务求学员在学习中真正取得进步。不仅如此，我们还提供灵活的上课时间表和课时安排，使学员的学习效率达到最大化。</p>
+      <p></p>
+      <h2 class="title">金牌课程</h2>
+      <table summary="Summary Here" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th>课程</th>
+            <th>课时</th>
+            <th>上课地点</th>
+            <th>报名状态</th>
+            <th>学习费用</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="light">
+            <td>基础口语</td>
+            <td>90</td>
+            <td>大学城</td>
+            <td>有名额</td>
+            <td><a href="#">在线咨询</a></td>
+          </tr>
+          <tr class="dark">
+            <td>BEC商务口语</td>
+            <td>90</td>
+            <td>大学城</td>
+            <td>有名额</td>
+            <td><a href="#">在线咨询</a></td>
+          </tr>
+          <tr class="light">
+            <td>雅思口语班</td>
+            <td>90</td>
+            <td>大学城</td>
+            <td>有名额</td>
+            <td><a href="#">在线咨询</a></td>
+          </tr>
+          <tr class="dark">
+            <td>面试口语班</td>
+            <td>90</td>
+            <td>大学城</td>
+            <td>有名额</td>
+            <td><a href="#">在线咨询</a></td>
+          </tr>
+          <tr class="light">
+            <td>写作班</td>
+            <td>90</td>
+            <td>大学城</td>
+            <td>有名额</td>
+            <td><a href="#">在线咨询</a></td>
+          </tr>
+          <tr class="dark">
+            <td>SAT班</td>
+            <td>90</td>
+            <td>大学城</td>
+            <td>有名额</td>
+            <td><a href="#">在线咨询</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="title">基础口语班</h2>
+      <p>现在你的口语处于初级水平，能听说读写最基本的英语单词和句子。暂时还没办法进行流畅的沟通。经过3个月的学习，你将可以进行基本的日常英语交流哦！</p>
+      <p></p>
+      <h2 class="title">BEC商务口语班</h2>
+      <p>目前您已经有了一定的语法功底，也具备良好的口语交流基础，但就商务英语而言，您还缺乏专业领域的相关知识。经过3个月的努力学习，您对现代国际商务现状会有更多的了解，同时学习并掌握更多与商务相关的英语表达。</p>
+      <p></p>
+      <h2 class="title">雅思口语班</h2>
+      <p>您目前拥有较好的英语基础，能用英语进行简单的会话和描述，但使用的句型有限，口语流利度还有待加强。如果您正在为打好雅思口语的基础而发愁，通过在睿特3-6个月的有针对性的学习，习得丰富的表达方式，让雅思口语更上一层楼！</p>
+      <p></p>
+      <h2 class="title">面试口语班</h2>
+      <p>面试口语作为目前大企业考核新进人才的一大门槛，不少白领为之头疼。由于口试内容难预估、英语口语能力难提高等原因，加上白领忙于工作奔波没有时间报读补习班，导致许多人就在这关败下阵来。这个课程就是为了忙碌奔波却又希望能成功升迁晋级的朋友准备的！通过学习，您所学的绝对不仅仅是几个简单的面试英语对话，或者背诵几篇自我介绍的文章，而是流利地发音，有技巧地应对，真诚的表达！</p>
+      <h2 class="title">写作班</h2>
+      <p>写作需要解决的问题是“写什么”和“怎么写”。在我们的培训中不断进行例子积累，可以让你在面对作文题目时从“一片空白”变得“文思泉涌”，完全解决“写什么”的问题。坚持模仿造句以及写作和修改，你就能写出真正地道、漂亮的英文文章，不再为“怎么写”而发愁。睿特写作平台包含所有的练习工具，让作文训练不再是纸上谈兵。</p>
+      <h2 class="title">SAT班</h2>
+      <p>目前您已经具有较好的英语基础，但是你希望能够在美国高考SAT考试中取得优良的成绩，以便取得通往美国名校的通行证，迫切需要有针对性的辅导。经过2-5个月的强化训练，你将在增强自己的英语水平的基础上，掌握更多考试技巧和答题规律，为冲刺SAT考试做最好的准备。</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
