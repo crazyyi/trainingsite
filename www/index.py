@@ -18,22 +18,22 @@ def server_static(filepath):
 @route('/')
 @jinja2_view('index.html')
 def index():
-	return {'title':'RedSunflowers'}
+	return {'title':'TheRedSunflowers'}
 
 @route('/courses_intro')
 @jinja2_view('courses_intro.html')
 def courses_intro():
-	return {'title':'RedSunflowers'}
+	return {'title':'TheRedSunflowers'}
 
 @route('/activities')
 @jinja2_view('activities.html')
 def activities():
-	return {'title':'RedSunflowers'}
+	return {'title':'TheRedSunflowers'}
 
 @route('/gallery')
 @jinja2_view('gallery.html')
 def gallery():
-	return {'title':'RedSunflowers'}
+	return {'title':'TheRedSunflowers'}
 
 @route('/corporation')
 @jinja2_view('corporation.html')
@@ -43,12 +43,12 @@ def corporation():
 @route('/aboutus')
 @jinja2_view('aboutus.html')
 def style_demo():
-	return {'title':'RedSunflowers'}
+	return {'title':'TheRedSunflowers'}
 
 @route('/contactus')
 @jinja2_view('contactus.html')
 def contactus():
-	return {'title':'RedSunflowers'}
+	return {'title':'TheRedSunflowers'}
 
 @route('/resources')
 @jinja2_view('resources.html')
@@ -58,7 +58,7 @@ def resources():
 @route('/faq')
 @jinja2_view('faq.html')
 def faq():
-	return {'title':'RedSunflowers'}
+	return {'title':'TheRedSunflowers'}
 
 @route('/submit_comment', method='POST')
 def submit_comment():
